@@ -1,33 +1,42 @@
 {
   "project_info": {
-    "project_number": "151189073392",
-    "project_id": "competiseed",
-    "storage_bucket": "competiseed.appspot.com"
+    "project_number": "402819416490",
+    "firebase_url": "https://competiseedx-default-rtdb.firebaseio.com",
+    "project_id": "competiseedx-default-rtdb",
+    "storage_bucket": "competiseedx-default-rtdb.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:151189073392:android:20d946a55bb1dc24c5c135",
+        "mobilesdk_app_id": "1:402819416490:android:443b757c0d48ca4456ebd3",
         "android_client_info": {
           "package_name": "com.rylabs.competiseedx"
         }
       },
       "oauth_client": [
         {
-          "client_id": "151189073392-hs6t80pjahq4k22ld3ljcnm6ons6satr.apps.googleusercontent.com",
+          "client_id": "402819416490-av71d3nsjf79hkkh54qim72tursebshk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rylabs.competiseedx",
+            "certificate_hash": "f378b8dec6dab3adf8e8d0d7dd90bc32f2ac5fdb"
+          }
+        },
+        {
+          "client_id": "402819416490-grdljts7ll7r1td7orc1tk27urthcctj.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDvKOEp2mUnhuf7mK1CZNg1qPpX69V5nr0"
+          "current_key": "AIzaSyBUtwZqK5TCUrqZiYJd4eY2csgcPHD0-K0"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "151189073392-hs6t80pjahq4k22ld3ljcnm6ons6satr.apps.googleusercontent.com",
+              "client_id": "402819416490-grdljts7ll7r1td7orc1tk27urthcctj.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

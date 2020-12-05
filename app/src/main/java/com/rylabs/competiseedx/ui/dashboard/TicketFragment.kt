@@ -40,6 +40,6 @@ class TicketFragment : Fragment(), TicketAdapter.OnInteractionListener {
     }
 
     override fun onSelected(position: Int) {
-        TODO("Not yet implemented")
+
     }
 }

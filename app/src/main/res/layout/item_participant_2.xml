@@ -2,11 +2,11 @@
 <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:layout_constraintTop_toBottomOf="@+id/textView"
+    app:layout_constraintTop_toBottomOf="@+id/tv_for_you_price"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/iv_event"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginStart="24dp"
@@ -18,38 +18,38 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/tv_organization"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
-        android:text="Valerian A."
         android:fontFamily="@font/work_sans_semibold"
+        android:text="Valerian A."
         android:textColor="@color/colorFont"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.45"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="@+id/imageView" />
+        app:layout_constraintStart_toEndOf="@+id/iv_event"
+        app:layout_constraintTop_toTopOf="@+id/iv_event" />
 
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="16dp"
         android:layout_height="16dp"
-        android:layout_marginTop="6dp"
+        android:layout_marginTop="4dp"
         android:src="@drawable/ic_baseline"
-        app:layout_constraintStart_toStartOf="@+id/textView3"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintStart_toStartOf="@+id/tv_organization"
+        app:layout_constraintTop_toBottomOf="@+id/tv_organization" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/tv_event_title"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="16dp"
-        android:text="Bekasi"
+        android:text="Depok"
         android:textSize="12dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.561"

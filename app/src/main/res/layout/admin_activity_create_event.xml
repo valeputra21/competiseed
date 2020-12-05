@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/work_sans_semibold"
+                android:gravity="center_vertical"
+                android:text="Add New Event"
+                android:textColor="@color/colorFont"
+                android:textSize="20dp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Event Title"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14dp"
+                android:fontFamily="@font/work_sans_semibold"
+                android:layout_marginTop="22dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp" />
+
+            <EditText
+                android:id="@+id/et_event_title"
+                android:background="@drawable/bg_edittext_normal"
+                android:padding="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:lines="1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your Organization Name"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14dp"
+                android:fontFamily="@font/work_sans_semibold"
+                android:layout_marginTop="22dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp" />
+
+            <EditText
+                android:id="@+id/et_event_org"
+                android:background="@drawable/bg_edittext_normal"
+                android:padding="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:lines="1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Event Description"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14dp"
+                android:fontFamily="@font/work_sans_semibold"
+                android:layout_marginTop="22dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp" />
+
+            <EditText
+                android:id="@+id/et_event_desc"
+                android:background="@drawable/bg_edittext_normal"
+                android:padding="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="4dp"
+                android:inputType="textMultiLine"
+                android:layout_width="match_parent"
+                android:gravity="top|left"
+                android:layout_height="wrap_content"
+                android:minHeight="200dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Event Price"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14dp"
+                android:fontFamily="@font/work_sans_semibold"
+                android:layout_marginTop="22dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp" />
+
+            <EditText
+                android:id="@+id/et_event_price"
+                android:background="@drawable/bg_edittext_normal"
+                android:padding="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:lines="1"/>
+
+            <Button
+                android:id="@+id/btn_post_event"
+                style="@style/ButtonPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Post Event"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

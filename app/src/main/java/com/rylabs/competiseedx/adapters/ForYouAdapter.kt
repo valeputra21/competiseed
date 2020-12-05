@@ -6,12 +6,16 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.ViewGroup.MarginLayoutParams
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.rylabs.competiseedx.R
+import com.rylabs.competiseedx.models.EventModel
+import com.rylabs.competiseedx.utils.CurrencyUtil
 
 class ForYouAdapter(
     private val mContext: Context,
+    private val listEvent: ArrayList<EventModel>,
     private val listener: OnInteractionListener
 ) : RecyclerView.Adapter<ForYouAdapter.ViewHolder>() {
 
@@ -32,24 +36,29 @@ class ForYouAdapter(
         holder: ViewHolder,
         position: Int
     ) {
-//        if (position == 0) {
-//            setMargins(holder.itemView, 40, 16, 20, 0);
-//        }
+
         Glide.with(mContext)
             .load(mContext.resources.getDrawable(R.drawable.banner_foryou))
             .placeholder(R.drawable.banner_foryou)
             .into(holder.ivBackground)
 
         holder.itemView.setOnClickListener { listener.onSelectedForYou(position) }
+
+        holder.tvTitle.text = listEvent[position].title
+        holder.tvDate.text = listEvent[position].dateDisplay
+        holder.tvPrice.text = listEvent[position].price?.let { CurrencyUtil.format(it) }
     }
 
     override fun getItemCount(): Int {
-        return 6
+        return listEvent.size
     }
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-        var ivBackground: ImageView = itemView.findViewById(R.id.iv_background)
+        internal var ivBackground: ImageView = itemView.findViewById(R.id.iv_background)
+        internal var tvTitle: TextView = itemView.findViewById(R.id.tv_for_you_title)
+        internal var tvDate: TextView = itemView.findViewById(R.id.tv_for_you_date)
+        internal var tvPrice: TextView = itemView.findViewById(R.id.tv_for_you_price)
 
     }
 
